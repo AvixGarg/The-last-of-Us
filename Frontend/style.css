@@ -3,7 +3,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url(Images/Background.jpg);
+  background-color: #6499E9;
   color: #eee;
   user-select: none;
 }
@@ -16,9 +16,9 @@ code {
   user-select: none;
   max-width: 300px;
   margin: 5rem auto;
-  border: 1px solid #ffffff22;
-  background-color: #282c34;
-  background: linear-gradient(0deg, #282c34 0%, rgba(17, 0, 32, 0.5) 100%);
+  border: 1px solid #7dccf122;
+  background-color: #232e43;
+  background: linear-gradient(0deg, #acbcdc 0%, rgba(17, 0, 32, 0.5) 100%);
   box-shadow: 0 7px 20px 5px #00000088;
   border-radius: 0.7rem;
   backdrop-filter: blur(7px);
@@ -29,7 +29,7 @@ code {
 .MorphedGlass hr {
   width: 100%;
   border: none;
-  border-bottom: 1px solid #88888855;
+  border-bottom: 1px solid #000000;
   margin-top: 0;
 }
 .MorphedGlass ins {
@@ -49,32 +49,23 @@ code {
 }
 .MorphedGlass .main .description {
   margin: 0.5rem 0;
-  color: #a89ec9;
+  color: #f7f6f8;
 }
 .MorphedGlass .main .tokenInfo {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.MorphedGlass .main .tokenInfo .price {
+.MorphedGlass .main .tokenInfo .upload {
   display: flex;
   align-items: center;
+  justify-content: center;
   color: #ee83e5;
   font-weight: 700;
 }
-.MorphedGlass .main .tokenInfo .price ins {
+.MorphedGlass .main .tokenInfo .upload ins {
   margin-left: -0.3rem;
   margin-right: 0.5rem;
-}
-.MorphedGlass .main .tokenInfo .duration {
-  display: flex;
-  align-items: center;
-  color: #a89ec9;
-  margin-right: 0.2rem;
-}
-.MorphedGlass .main .tokenInfo .duration ins {
-  margin: 0.5rem;
-  margin-bottom: 0.4rem;
 }
 .MorphedGlass .main .creator {
   display: flex;
@@ -83,7 +74,7 @@ code {
   margin-bottom: -0.3rem;
 }
 .MorphedGlass .main .creator ins {
-  color: #a89ec9;
+  color: #000000;
   text-decoration: none;
 }
 .MorphedGlass .main .creator .wrapper {
@@ -104,28 +95,11 @@ code {
   object-fit: cover;
   margin: 0;
 }
-.MorphedGlass ::before {
-  position: fixed;
-  content: "";
-  box-shadow: 0 0 100px 40px #ffffff08;
-  top: -10%;
-  left: -100%;
-  transform: rotate(-45deg);
-  height: 60rem;
-  transition: 0.7s all;
-}
 .MorphedGlass:hover {
   border: 1px solid #ffffff44;
   box-shadow: 0 7px 50px 10px #000000aa;
   transform: scale(1.015);
-  filter: brightness(1.3);
 }
-.MorphedGlass:hover ::before {
-  filter: brightness(0.5);
-  top: -100%;
-  left: 200%;
-}
-
 .bg {
   position: fixed;
   top: 50%;
@@ -135,4 +109,50 @@ code {
 .bg h1 {
   font-size: 15rem;
   filter: opacity(0.5);
+}
+
+.button-23 {
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #222222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Circular,-apple-system,BlinkMacSystemFont,Roboto,"Helvetica Neue",sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  padding: 13px 23px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+  user-select: none;
+  -webkit-user-select: none;
+  width: auto;
+  margin-left: 150%;
+  margin-bottom: 10%;
+}
+
+.button-23:focus-visible {
+  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+  transition: box-shadow .2s;
+}
+
+.button-23:active {
+  background-color: #F7F7F7;
+  border-color: #000000;
+  transform: scale(.96);
+  
+}
+
+.button-23:disabled {
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: not-allowed;
+  opacity: 1;
 }
